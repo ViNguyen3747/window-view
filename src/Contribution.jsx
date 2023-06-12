@@ -18,22 +18,29 @@ export default () => {
       <div
         className={`contribution-info ${isOpen && "contribution-is-active"}`}
       >
-        Purple Dream by{" "}
+        Afternoon Nap by{" "}
         <a
-          href="https://www.youtube.com/c/GhostrifterOfficial"
+          href=" https://soundcloud.com/ghostrifter-official"
           target="_blank"
           className="contribution_links"
         >
           Ghostrifter Official
         </a>{" "}
-        | Creative Commons — Attribution-NoDerivs 3.0 Unported — CC BY-ND 3.0
-        Music promoted by | Music promoted by{" "}
+        | Music promoted by{" "}
         <a
           href="https://www.chosic.com/free-music/all/"
           target="_blank"
           className="contribution_links"
         >
           Chosic
+        </a>{" "}
+        |{" "}
+        <a
+          href="https://creativecommons.org/licenses/by-sa/3.0/"
+          target="_blank"
+          className="contribution_links"
+        >
+          Creative Commons CC BY-SA 3.0
         </a>
       </div>
     </>
