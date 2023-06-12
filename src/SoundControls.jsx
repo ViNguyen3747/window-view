@@ -41,7 +41,7 @@ export default () => {
           </div>
         )}
       </div>
-      <audio ref={lofiRef} loop muted={!isPlaying} autoPlay>
+      <audio ref={lofiRef} loop muted={!isPlaying}>
         <source src={LofiSound} type="audio/mpeg" />
       </audio>
     </>
