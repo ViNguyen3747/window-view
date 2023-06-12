@@ -20,7 +20,7 @@ export default () => {
       >
         Purple Dream by{" "}
         <a
-          href="https://bit.ly/ghostrifter-yt"
+          href="https://www.youtube.com/c/GhostrifterOfficial"
           target="_blank"
           className="contribution_links"
         >
