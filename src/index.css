@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
 @font-face {
   font-family: retro-cool;
-  src: url("RetroCool.otf");
+  src: url("/RetroCool.otf");
 }
 html,
 body,
