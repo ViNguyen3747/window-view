@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
+@font-face {
+  font-family: retro-cool;
+  src: url("RetroCool.otf");
+}
+html,
+body,
+#root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Sono", sans-serif;
+  cursor: url("/cursor.svg"), default;
+  user-select: none;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  transition: background 1s ease-out;
+  background: linear-gradient(
+    0deg,
+    hsl(296deg 86% 78%) 1%,
+    hsl(293deg 87% 77%) 34%,
+    hsl(290deg 88% 77%) 49%,
+    hsl(287deg 88% 76%) 61%,
+    hsl(285deg 89% 76%) 71%,
+    hsl(282deg 90% 76%) 79%,
+    hsl(279deg 91% 75%) 86%,
+    hsl(276deg 92% 75%) 92%,
+    hsl(274deg 93% 74%) 97%,
+    hsl(271deg 94% 74%) 100%
+  );
+}
+
+/* contribution */
+.contribution-toggle-button {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background-color: #ffffff95;
+  border: 2px dashed #ffffff;
+  box-shadow: 0 0 0 5px #ffffff95;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1em;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  transition: transform 0.8s ease-in-out;
+}
+
+.contribution-toggle-button:hover {
+  cursor: url("/pointer.svg"), default;
+}
+.contribution-toggle-active {
+  transform: translateX(-24em);
+}
+.contribution-info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1em;
+  z-index: 1;
+  width: 30em;
+  height: fit-content;
+  background-color: #ffffff95;
+  border: 2px dashed #ffffff;
+  box-shadow: 0 0 0 5px #ffffff95;
+  font-size: small;
+  color: white;
+  padding: 1em;
+  transition: transform 0.8s ease-in-out;
+  transform: translateX(34em);
+}
+.contribution-is-active {
+  transform: translateX(0);
+}
+.soundControl {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  margin: 20px;
+}
+.soundControl:hover {
+  cursor: url("/pointer.svg"), default;
+}
+
+.app-name {
+  font-family: retro-cool, sans-serif;
+  position: absolute;
+  display: block;
+  z-index: 1;
+  color: #ffffff;
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  margin: 2rem;
+}
+.app-name > div:last-child {
+  margin-left: 15rem;
+}
+
+.logo {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  font-family: "Sono", sans-serif;
+  color: #ffffff;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  cursor: url("/cursor.svg"), default;
+  transition: color 0.2s ease;
+}
+a:hover {
+  cursor: url("/pointer.svg"), default;
+}
+.contribution_links:hover {
+  color: #fa8893;
+}
+#name::before {
+  background-color: #ffffff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-right: 10px;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 0.7rem;
+}
+a:hover #name::before {
+  background-color: #ffffff;
+  width: 3rem;
+  cursor: url("/pointer.svg"), default;
+}
