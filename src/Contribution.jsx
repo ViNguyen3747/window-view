@@ -17,7 +17,6 @@ export default () => {
       </div>
       <div
         className={`contribution-info ${isOpen && "contribution-is-active"}`}
-        onClick={(e) => handleToggle(e)}
       >
         Purple Dream by{" "}
         <a
