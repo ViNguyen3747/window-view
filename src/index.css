@@ -54,6 +54,7 @@ canvas {
   color: white;
   font-weight: bolder;
   font-size: large;
+  transform: translateX(0.5em);
   transition: transform 0.8s ease-in-out;
 }
 
@@ -89,7 +90,7 @@ canvas {
   z-index: 1;
   top: 0;
   right: 0;
-  margin: 20px;
+  margin: 0.5rem;
 }
 .soundControl:hover {
   cursor: url("/pointer.svg"), default;
