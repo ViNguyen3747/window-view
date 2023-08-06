@@ -1,8 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
-@font-face {
-  font-family: retro-cool;
-  src: url("/RetroCool.otf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 html,
 body,
 #root {
@@ -11,7 +7,7 @@ body,
   left: 0;
   width: 100%;
   height: 100%;
-  font-family: "Sono", sans-serif;
+  font-family: "Righteous", cursive;
   cursor: url("/cursor.svg"), default;
   user-select: none;
 }
@@ -97,7 +93,8 @@ canvas {
 }
 
 .app-name {
-  font-family: retro-cool, sans-serif;
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
   position: absolute;
   display: block;
   z-index: 1;
